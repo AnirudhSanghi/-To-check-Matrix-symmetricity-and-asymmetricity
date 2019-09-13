@@ -1,0 +1,41 @@
+what this program do?
+  This programme take input size of square matrix from user then take matrix inputfrom user and store them in a array called as matrix.
+  After that it check wether the the matrix is symmetric or not and print the tht result
+
+
+Logic behind the programme-
+  # it take input from user about square matrix size or order and store it in a variable called as 'size'.
+  # then it create an array of order size*size and store its values through taking the input from user.for this one for loop is initiated running 'size' times and in it again another for loop is        initiated running again 'size' times and ultimately creating a size*size matrix.
+  # to check wether the matrix is symmetric or not it follows following logic
+    -one for loop running 'size' times is initiated and in it another for loop is initiated running 'size' times. In inner for loop a if condition is staed work is m[l][n]!=m[l][n] and l!=n
+then it added num (initiated early) one otherwise remain same
+  # After that if num is equal to 0 then it is not symmetric otherwise symmetric
+
+
+
+how to do compilation and run the programme?
+  #go to directory where your code is present(in terminal)
+  #type gcc 2019meb1237.c 
+  #type ./a.out
+  
+
+sample run
+ 2019meb1241@cslab:~$ gcc 2019meb1237.c 
+2019meb1241@cslab:~$ ./a.out
+Enter The Size Of Matrix -3
+Inputing Matrix Of Size 3 * 3
+Enter m[0][0] :1
+Enter m[0][1] :2
+Enter m[0][2] :3
+Enter m[1][0] :2
+Enter m[1][1] :5
+Enter m[1][2] :4
+Enter m[2][0] :3
+Enter m[2][1] :4
+Enter m[2][2] :7
+Your Matrix is: 
+1 2 3 
+2 5 4 
+3 4 7 
+your matrix is  symmetric
+
